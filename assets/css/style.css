@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
   --cream: #edebe8;
@@ -14,16 +14,16 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  font-family: 'EB Garamond', 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Cardo', Georgia, serif;
   background: var(--white);
   color: var(--ink);
-  font-weight: 500;
+  font-weight: 400;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, .btn, .logo, nav {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 a {
@@ -56,17 +56,6 @@ img { max-width: 100%; display: block; }
 }
 .site-header nav a { border-bottom: 1px solid transparent; padding-bottom: 2px; }
 .site-header nav a:hover { border-bottom-color: currentColor; }
-
-/* Homepage: header floats transparently over the hero photo */
-.site-header--overlay {
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  z-index: 5;
-  color: var(--white);
-}
-.site-header--overlay .logo { display: none; }
-.site-header--overlay nav { margin-left: auto; }
-.site-header--overlay nav a { text-shadow: 0 1px 6px rgba(0,0,0,0.5); }
 
 /* Buttons */
 .btn {
@@ -125,7 +114,7 @@ img { max-width: 100%; display: block; }
 }
 .headline-section h1 {
   font-size: clamp(2rem, 5vw, 3.4rem);
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 0 50px;
 }
 .link-cols {
@@ -157,7 +146,7 @@ img { max-width: 100%; display: block; }
 }
 .title-band h1 {
   font-size: clamp(2rem, 4.5vw, 2.8rem);
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -174,7 +163,7 @@ main.page {
   font-size: 1.15rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 0 12px;
 }
 .faq-item p { font-size: 1.08rem; line-height: 1.6; margin: 0; max-width: 62ch; }
@@ -193,7 +182,7 @@ main.page {
   border-radius: 4px;
   margin-bottom: 14px;
 }
-.team-grid .card .name { font-size: 1.25rem; font-weight: 500; }
+.team-grid .card .name { font-size: 1.25rem; font-weight: 700; }
 .team-grid .card .role { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: #6b6459; margin-top: 4px; }
 
 /* Stylist profile page */
@@ -201,7 +190,7 @@ main.page {
 .stylist-profile .photo { flex: 0 0 340px; max-width: 100%; }
 .stylist-profile .photo img { border-radius: 4px; width: 100%; aspect-ratio: 2/3; object-fit: cover; }
 .stylist-profile .info { flex: 1 1 340px; max-width: 480px; padding-top: 10px; }
-.stylist-profile h1 { font-size: 2.4rem; font-weight: 600; margin: 0 0 4px; }
+.stylist-profile h1 { font-size: 2.4rem; font-weight: 700; margin: 0 0 4px; }
 .stylist-profile .role { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.85rem; color: #6b6459; margin-bottom: 26px; }
 .stylist-profile .bio { font-size: 1.08rem; line-height: 1.65; margin-bottom: 28px; }
 .stylist-profile .note { font-size: 0.95rem; line-height: 1.6; color: #4d473e; margin: 20px 0; }
@@ -216,7 +205,7 @@ main.page {
 /* Long-form content page (extensions / hair systems) */
 .content-page { max-width: 720px; margin: 0 auto; }
 .content-page img { border-radius: 4px; margin-bottom: 50px; }
-.content-page h2 { font-size: 1.4rem; font-weight: 600; margin: 44px 0 14px; }
+.content-page h2 { font-size: 1.4rem; font-weight: 700; margin: 44px 0 14px; }
 .content-page p { font-size: 1.08rem; line-height: 1.7; white-space: pre-line; }
 .content-page .cta { text-align: center; margin-top: 50px; }
 

@@ -56,7 +56,8 @@ def footer(prefix):
   </footer>"""
 
 
-def page(title, description, body, prefix="", active=None, extra_head="", overlay_header=False):
+def page(title, description, body, prefix="", active=None, extra_head="", show_header=True):
+    header_html = header(prefix, active) if show_header else ""
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -69,7 +70,7 @@ def page(title, description, body, prefix="", active=None, extra_head="", overla
   {extra_head}
 </head>
 <body>
-  {header(prefix, active, overlay=overlay_header)}
+  {header_html}
   {body}
   {footer(prefix)}
 </body>
@@ -124,7 +125,7 @@ write("index.html", page(
     f"{SITE_NAME} — Cincinnati, Ohio",
     "Free Hair Salon is a vegan, cruelty-free, sustainable hair salon in Cincinnati, Ohio. Book your good hair day.",
     home_body,
-    overlay_header=True,
+    show_header=False,
 ))
 
 # ---------- FAQ ----------
