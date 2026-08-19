@@ -31,12 +31,13 @@ def nl2p(text):
     return "\n".join(out)
 
 
-def header(prefix, active=None):
+def header(prefix, active=None, overlay=False):
     links = "\n      ".join(
         f'<a href="{prefix}{slug}/"{" class=\"active\"" if slug == active else ""}>{label}</a>'
         for slug, label in NAV
     )
-    return f"""<header class="site-header">
+    cls = "site-header site-header--overlay" if overlay else "site-header"
+    return f"""<header class="{cls}">
     <a class="logo" href="{prefix}index.html"><img src="{prefix}assets/img/wordmark.png" alt="{SITE_NAME}"></a>
     <nav>
       {links}
@@ -55,8 +56,7 @@ def footer(prefix):
   </footer>"""
 
 
-def page(title, description, body, prefix="", active=None, extra_head=""):
-    canonical_path = "" if prefix == "" else ""
+def page(title, description, body, prefix="", active=None, extra_head="", overlay_header=False):
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -69,7 +69,7 @@ def page(title, description, body, prefix="", active=None, extra_head=""):
   {extra_head}
 </head>
 <body>
-  {header(prefix, active)}
+  {header(prefix, active, overlay=overlay_header)}
   {body}
   {footer(prefix)}
 </body>
@@ -124,6 +124,7 @@ write("index.html", page(
     f"{SITE_NAME} — Cincinnati, Ohio",
     "Free Hair Salon is a vegan, cruelty-free, sustainable hair salon in Cincinnati, Ohio. Book your good hair day.",
     home_body,
+    overlay_header=True,
 ))
 
 # ---------- FAQ ----------
