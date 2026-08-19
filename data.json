@@ -1,0 +1,142 @@
+{
+  "site_name": "Free Hair Salon",
+  "address_line1": "318 W 4th St.",
+  "address_line2": "Cincinnati, Ohio",
+  "instagram_salon": "https://www.instagram.com/freehair.salon/",
+  "copyright": "Ⓒ Free Hair Salon 2026",
+  "general_book_url": "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVC8owJsGKsMIIZyvsttw9n3M1moErcOxSB3Kwa63KsUjXQczH1Dl%2FlUrU6LcPP6ObynNZ6iXpxAR3c9%20K5Z77cEarNOomrrq27XxNAYxVunnUo%2FjMtE5XMT1D3yS8nrO3HuR0a2LO3h6X22u%2Ff0qGSt%20j8uTsr%20B48gRlgkxAql%2F7HsXhS3g%20ro%2FcnbaqLv9aDgmLLk7N0ozShIZjQSTR%2078TOXJEAd%20uKXkQH5CBE%2FR3n%2FVUSnnjV3Me9MYUBRHaorBLXj1%20jnWNXjYrHK5wL2TC%2FpK1cZGLn2NrdBMLMPrpx3zl%2Fc3EcOTZXr1XxLoNEnpAh6M8tzwhSwUYOHhqnwbaDF2HGVQAQATcfisodqq",
+  "hero": {
+    "photo": "hero-couple.jpg",
+    "eyebrow": "Free Hair — Take Care —",
+    "headline": "Good hair days are ahead"
+  },
+  "stylists": [
+    {
+      "slug": "blake",
+      "name": "Blake Roberts",
+      "role": "co-owner + stylist",
+      "photo": "team-blake.jpg",
+      "book_url": "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVC8owJsGKsMIIZyvsttw9n3M1moErcOxSB3Kwa63KsUjXQczH1Dl%2FlUrU6LcPP6ObynNZ6iXpxAR3c9%20K5Z77cFWYY%20J07%20kCMXUM3PeVkY%2F9DPEGCHGNO7Uwi5ei2ifVt9fECx3rDIpLf7CO7ystHD9U3KcdLG1a012s2KoPNvLRq%20j5%20ihwk9ptGlTrLCG5MRL%2FX2SwKNqSoQ7so6wJQOmX0TrxCOxL69xQxx2dqewb6qH6Fxzqed6Q2ZxywlH%20ZtxOPJbl4RyPreT%2FN9psLZCtCKZIz1wbNM%2Flxpgwl6VTNLTRgeMM1D%2FP%20EYa4aGbbP4zolZP%205ODFOU6527eJi1rrvjhYroXGHmHxLm21YDYShrV6JX%2FDpHy2DysTwNjg%3D%3D",
+      "price_list_slug": "blake-pricelist",
+      "text_phone": "+18596209388",
+      "text_phone_display": "859-620-9388",
+      "instagram": null,
+      "email": null,
+      "available_online": true
+    },
+    {
+      "slug": "emerson",
+      "name": "Emerson Hill",
+      "role": "co-owner + stylist",
+      "photo": "team-emerson.jpg",
+      "book_url": null,
+      "price_list_slug": null,
+      "text_phone": "+15134803733",
+      "text_phone_display": "513-480-3733",
+      "instagram": "https://www.instagram.com/ashley.emerson.hill/",
+      "email": "emerson@freehairsalon.com",
+      "available_online": false,
+      "unavailable_note": "Emerson is currently unavailable for online booking. Please contact her via one of these links for booking information. Text is preferred at 513-480-3733.",
+      "sms_disclaimer": "*Please note that providing your mobile number may opt you in to receive messages from us. To opt out, reply STOP."
+    },
+    {
+      "slug": "tyler",
+      "name": "Tyler Hill",
+      "role": "stylist + curly hair expert",
+      "tagline": "Cuts // Curls // Hair Systems",
+      "photo": "team-tyler.jpg",
+      "book_url": "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVC8owJsGKsMIIZyvsttw9n3M1moErcOxSB3Kwa63KsUjXQczH1Dl%2FlUrU6LcPP6ObynNZ6iXpxAR3c9%20K5Z77cFWYY%20J07%20kCMXUM3PeVkY%2F9DPEGCHGNO7Uwi5ei2ifVt9fECx3rDIpLf7CO7ystHD9U3KcdLG1a012s2KoPNvLRq%20j5%20ihwk9ptGlTrLCG5MRL%2FX2SwKNqSoQ7so6wJQOmX0TrxCOxL69xQxx2dqewb6qH6Fxzqed6Q2ZxywlH%20ZtxOPJbl4RyPreT%2FN9psLZCtCKZIz1wbNM%2Flxpgwl6VTNLTRgeMM1D%2FP%20EYa4aGbbP4zolZP%205ODFOU6527eJhhH8TZ%20wUsFqVmOwnVmpgisvAgsU5wsrQFlydVdX%20mqQ%3D%3D",
+      "price_list_slug": null,
+      "text_phone": null,
+      "instagram": "https://www.instagram.com/t.hill.hair/",
+      "email": "tyler@freehairsalon.com",
+      "available_online": true,
+      "bio": "With 10 years of salon experience, Tyler excels in creating specialized and thoughtful looks for all his clients. Early on in his career he developed a strong interest in curly hair leading him to learning from curly hair experts from all over the country including Sassoon in NYC. Most recently, Tyler has become certified in creating customized Hair Systems for clients struggling with hair loss.",
+      "hair_system_faq_link": true
+    },
+    {
+      "slug": "lillian",
+      "name": "Lillian Kappa",
+      "role": "luxury extensions stylist",
+      "tagline": "luxury extensions stylist / lived in color",
+      "photo": "team-lillian.jpg",
+      "book_url": "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVC8owJsGKsMIIZyvsttw9n3M1moErcOxSB3Kwa63KsUjXQczH1Dl%2FlUrU6LcPP6ObynNZ6iXpxAR3c9%20K5Z77cFWYY%20J07%20kCMXUM3PeVkY%2F9DPEGCHGNO7Uwi5ei2ifVt9fECx3rDIpLf7CO7ystHD9U3KcdLG1a012s2KoPNvLRq%20j5%20ihwk9ptGlTrLCG5MRL%2FX2SwKNqSoQ7so6wJQOmX0TrxCOxL69xQxx2dqewb6qH6Fxzqed6Q2ZxywlH%20ZtxOPJbl4RyPreT%2FN9psLZCtCKZIz1wbNM%2Flxpgwl6VTNLTRgeMM1D%2FP%20EYa4aGbUfxe1FEasVbFnpqH0avwzlyv7ShzEGMKYd20W9Ui%2FtH",
+      "price_list_slug": null,
+      "text_phone": null,
+      "instagram": "https://www.instagram.com/hairbylilliankappa/",
+      "email": null,
+      "available_online": true
+    },
+    {
+      "slug": "camryn",
+      "name": "Camryn Parker",
+      "role": "stylist + brunette enthusiast",
+      "tagline": "stylist / brunette enthusiast",
+      "photo": "team-camryn.jpg",
+      "book_url": "https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVC8owJsGKsMIIZyvsttw9n3M1moErcOxSB3Kwa63KsUjXQczH1Dl%2FlUrU6LcPP6ObynNZ6iXpxAR3c9%20K5Z77cFWYY%20J07%20kCMXUM3PeVkY%2F9DPEGCHGNO7Uwi5ei2ifVt9fECx3rDIpLf7CO7ystHD9U3KcdLG1a012s2KoPNvLRq%20j5%20ihwk9ptGlTrLCG5MRL%2FX2SwKNqSoQ7so6wJQOmX0TrxCOxL69xQxx2dqewb6qH6Fxzqed6Q2ZxywlH%20ZtxOPJbl4RyPreT%2FN9psLZCtCKZIz1wbNM%2Flxpgwl6VTNLTRgeMM1D%2FP%20EYa4aGbWnRL5P2U5MN0JJ%2F%2FSytSqpnDrnQlI%2Fy%205UMJO8uOEr%2F",
+      "price_list_slug": null,
+      "text_phone": null,
+      "instagram": "https://www.instagram.com/_glamcam/",
+      "email": null,
+      "available_online": true
+    }
+  ],
+  "blake_pricelist": [
+    ["Haircut", "75.00"],
+    ["Clipper cut", "45.00"],
+    ["Curly Cut", "80.00"],
+    ["Transformative cut", "85.00"],
+    ["Fringe Trim", "15.00"],
+    ["Full Highlight + Haircut", "350.00"],
+    ["Highlight + Retouch + Haircut", "300.00"],
+    ["Partial Highlight + Blowout", "200.00"],
+    ["Partial Highlight + Haircut", "250.00"],
+    ["Color Retouch + Haircut", "175.00"],
+    ["Color Retouch + Blowout", "125.00"],
+    ["Transformative Color / Hourly Rate Color", "100.00/hr"],
+    ["Conditioning Treatment", "30.00"],
+    ["Root Melt", "30.00"],
+    ["Gloss + Blowout", "60.00"],
+    ["Gloss + Haircut", "90.00"],
+    ["15 minute Scalp Massage", "15.00"],
+    ["Brow Wax", "20.00"],
+    ["Brow Tint", "20.00"],
+    ["Lip Wax", "15.00"],
+    ["Blowout", "50.00"],
+    ["Extra Color", "15.00/bowl"]
+  ],
+  "blake_pricelist_note": "*These are starting prices and are subject to change based on timing, hair density, and amount of color used.",
+  "faq": [
+    ["What is Free Hair?", "Our doors opened with a conscious commitment to care. Care for you and your look. Care for our beloved Cincinnati. Care for our earth. Free Hair is dedicated to create lasting change in hair, beauty, fashion, our planet and you. All the products at Free Hair are vegan, cruelty-free, sustainable, and low-tox. Our team has partnered with Green Circle in effort to produce as little waste as our industry will allow. Good for the Earth. Good for you."],
+    ["How can I book an appointment?", "BOOK_LINK If you have questions about what you should book, reach out to your preferred stylist and they can help you."],
+    ["I need to reschedule!", "Reach out to your stylist who you booked with directly. Each stylist manages their own books."],
+    ["What is the cancellation policy?", "We require a 24 hour notice for all cancellations. Cancel within 24 hours will results in a 50% charge of service. No shows will result in full charge of the appointment. Thank you for understanding."],
+    ["What if I no show?", "Sorry, if you no show we will charge 100% of the service to the card on file. If there is no card on file we will send a payment link for you to complete. Thanks for understanding and valuing our stylists time."],
+    ["Where do I park?", "Street parking is available around the salon. If 4th St is busy, try Plum or Central. There is also a large parking lot at 4th and Plum."],
+    ["What is a Green Circle Salon?", "Green Circle recycles & recovers up to 95% of our Beauty waste. Resources that were once considered waste are being recycled! This helps keep millions of pounds of waste each year from the beauty industry out of landfills."]
+  ],
+  "hair_extensions": {
+    "photo": "extensions-hairsystems.jpg",
+    "sections": [
+      ["What Extensions Do We Use?", "We offer luxury hair extensions that blend seamlessly and last 12 to 20 weeks with proper care. Your extensions will be custom-matched to your natural color and installed by a certified stylist using either keratin bond (k-tip) or silk weft methods — two of the most natural-looking, comfortable options available.\n\nPricing starts at $250 and varies depending on your goals and hair type. Before installation, we always begin with a one-on-one consultation to build your perfect plan.\n\nFor k-tip clients, new hair is used with each cycle to maintain integrity and cleanliness. Removal is quick and painless, typically taking around 30 minutes."],
+      ["How to Care for Your Extensions", "After installation, you’ll need to wait 24 hours before washing your hair — and a little longer before tying it up, especially with silk wefts. Once you’re in the swing of it, extensions are easy to manage: style, blow dry, or air dry just like your natural hair.\n\nA few important care tips:\n— Use a heat protectant before styling\n— Avoid wet buns and don’t brush near the bonds\n— Skip silicones and sunscreen on your hair to prevent color changes\n— We recommend Oway’s Glossy Nectar or Reverie’s Ever Oil to keep hair soft and radiant\n\nShedding a few extensions over time is totally normal — especially if worn past the recommended timeframe."],
+      ["Service Deposit", "A $500 non-refundable deposit is required to reserve your installation appointment. This goes directly toward your final balance and secures your custom-ordered hair and stylist’s time.\n\nYou're welcome to reach out directly to your preferred stylist with any questions, or book your consultation online at your convenience. Whether you're brand new to extensions or ready for a refresh, we’re here to guide you every step of the way."]
+    ]
+  },
+  "hair_systems": {
+    "photo": "extensions-hairsystems.jpg",
+    "consult_email": "tyler@freehairsalon.com",
+    "faq": [
+      ["What is a “hair system”?", "Hair systems are non-surgical, customized hair replacement solutions that seamlessly blend with your natural hair. Gone are the days of grandpa’s toupee. Restore confidence and feel more like yourself with a personalized hair system. This is not an accessory — it’s a transformation."],
+      ["How do I begin my transformation journey?", "The journey began the moment your curiosity began. Your next step is to schedule a consultation by emailing EMAIL_LINK. During our consultation we will consider all options in order to come up with a plan to provide the best hair system solution. Our goal is to find the ideal product and look to meet your expectations."],
+      ["What are hair systems made from?", "Not all systems are created equal. My preference is to only use the highest quality products available. Durable, invisible bases and 100% real human hair. Hair system bases are made from lace, polyurethane or a hybrid of the two. I’ve partnered with the industry-leading HAIRSKEEN_LINK to provide what I believe are the best systems on the market."],
+      ["What is the life cycle of my hair system?", "In short, your hair system will perform and last longer with better care. Our first installation is when the system will be fully personalized to your scalp and haircut. Every following maintenance appointment comes with a haircut and a reinstallation of the hair system. Those time frames look different for every person depending on a few variables we will discuss during consultation."],
+      ["What is the at-home care for my hair system like?", "The system is real hair so you can treat it as such! Shampoo it. Style it. Exercise in it. Part of our consultation will help us determine what changes will bring the most out of your hair style. Wearing a system is a huge transformation so adjustments will be necessary. Finding the right product and care routine makes all the difference. Together we will create a plan to maximize the lifespan of your hair system."],
+      ["How much does it cost?", "Consultations require a $50 deposit which will contribute to the cost of a new system. New hair system installation starts at $650 and maintenance appointments start at $120."]
+    ]
+  },
+  "merch": [
+    {"name": "beauty is a feeling tie dye shirt", "price": "50", "image": "merch-tiedye-bg.jpg", "buy_url": "https://square.link/u/J0At26sU"},
+    {"name": "free hair squiggle tote", "price": "15", "image": "merch-tote.jpg", "buy_url": "https://square.link/u/WqVDpc4i"}
+  ]
+}

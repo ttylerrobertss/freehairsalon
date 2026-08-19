@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+:root {
+  --cream: #edebe8;
+  --white: #ffffff;
+  --taupe: #a5977f;
+  --lime: #e1ff8d;
+  --ink: #1c1b1a;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: 'EB Garamond', 'Cormorant Garamond', Georgia, serif;
+  background: var(--white);
+  color: var(--ink);
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img { max-width: 100%; display: block; }
+
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 32px;
+}
+.site-header .logo img { height: 26px; filter: brightness(0); }
+.site-header nav {
+  display: flex;
+  gap: 28px;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.site-header nav a { border-bottom: 1px solid transparent; padding-bottom: 2px; }
+.site-header nav a:hover { border-bottom-color: currentColor; }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  border: 1px solid var(--ink);
+  padding: 12px 26px;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.btn:hover { background: var(--ink); color: var(--white); }
+.btn-row { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+
+/* Hero */
+.hero { position: relative; overflow: hidden; }
+.hero-photo { width: 100%; height: 62vh; min-height: 380px; object-fit: cover; filter: grayscale(1); }
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  text-align: center;
+  padding: 0 20px;
+  background: rgba(0,0,0,0.12);
+}
+.hero-wordmark { width: min(420px, 70vw); filter: brightness(0) invert(1); }
+.hero-overlay .btn { border-color: var(--white); color: var(--white); background: rgba(0,0,0,0.15); }
+.hero-overlay .btn:hover { background: var(--white); color: var(--ink); }
+
+/* Ticker */
+.ticker {
+  background: var(--taupe);
+  color: var(--white);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+.ticker span {
+  display: inline-block;
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding-right: 1em;
+}
+
+/* Good hair days section */
+.headline-section {
+  background: var(--cream);
+  text-align: center;
+  padding: 70px 32px 60px;
+}
+.headline-section h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 500;
+  margin: 0 0 50px;
+}
+.link-cols {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  font-size: 0.85rem;
+}
+.link-cols .col-label {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+  color: #6b6459;
+  margin-bottom: 8px;
+}
+.link-cols .col-value {
+  font-size: 1.05rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Title band */
+.title-band {
+  background: var(--ink);
+  color: var(--white);
+  padding: 90px 32px 70px;
+  text-align: center;
+}
+.title-band h1 {
+  font-size: clamp(2rem, 4.5vw, 2.8rem);
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Generic page sections */
+main.page {
+  padding: 70px 0 100px;
+  background: var(--cream);
+}
+
+/* FAQ */
+.faq-item { border-top: 1px solid #ddd8d0; padding: 28px 0; }
+.faq-item:last-child { border-bottom: 1px solid #ddd8d0; }
+.faq-item h3 {
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+.faq-item p { font-size: 1.08rem; line-height: 1.6; margin: 0; max-width: 62ch; }
+
+/* Team grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 34px;
+  text-align: center;
+}
+.team-grid .card img {
+  width: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+.team-grid .card .name { font-size: 1.25rem; font-weight: 500; }
+.team-grid .card .role { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: #6b6459; margin-top: 4px; }
+
+/* Stylist profile page */
+.stylist-profile { display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start; justify-content: center; }
+.stylist-profile .photo { flex: 0 0 340px; max-width: 100%; }
+.stylist-profile .photo img { border-radius: 4px; width: 100%; aspect-ratio: 2/3; object-fit: cover; }
+.stylist-profile .info { flex: 1 1 340px; max-width: 480px; padding-top: 10px; }
+.stylist-profile h1 { font-size: 2.4rem; font-weight: 500; margin: 0 0 4px; }
+.stylist-profile .role { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.85rem; color: #6b6459; margin-bottom: 26px; }
+.stylist-profile .bio { font-size: 1.08rem; line-height: 1.65; margin-bottom: 28px; }
+.stylist-profile .note { font-size: 0.95rem; line-height: 1.6; color: #4d473e; margin: 20px 0; }
+.stylist-profile .disclaimer { font-size: 0.75rem; color: #948c7d; margin-top: 24px; }
+.stylist-profile .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; }
+
+/* Price list */
+.price-table { max-width: 640px; margin: 0 auto; }
+.price-row { display: flex; justify-content: space-between; gap: 20px; padding: 12px 0; border-bottom: 1px solid #e4e0d8; font-size: 1.05rem; }
+.price-note { text-align: center; font-size: 0.85rem; color: #6b6459; margin-top: 30px; font-style: italic; }
+
+/* Long-form content page (extensions / hair systems) */
+.content-page { max-width: 720px; margin: 0 auto; }
+.content-page img { border-radius: 4px; margin-bottom: 50px; }
+.content-page h2 { font-size: 1.4rem; font-weight: 600; margin: 44px 0 14px; }
+.content-page p { font-size: 1.08rem; line-height: 1.7; white-space: pre-line; }
+.content-page .cta { text-align: center; margin-top: 50px; }
+
+/* Merch */
+.merch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 50px; }
+.merch-item { text-align: center; }
+.merch-item img { border-radius: 4px; width: 100%; max-height: 420px; object-fit: contain; background: var(--white); margin-bottom: 18px; }
+.merch-item .name { font-size: 1.1rem; margin-bottom: 6px; }
+.merch-item .price { font-size: 0.95rem; color: #6b6459; margin-bottom: 16px; }
+
+/* Footer */
+.site-footer {
+  background: var(--lime);
+  padding: 50px 32px 40px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+.site-footer .foot-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 24px;
+}
+.site-footer .foot-mark img { height: 46px; filter: brightness(0); }
+.site-footer a { text-decoration: underline; text-underline-offset: 3px; }
+.site-footer .copy { color: #4d4a2f; }
+
+@media (max-width: 640px) {
+  .site-header { padding: 18px 20px; flex-direction: column; gap: 12px; }
+  .site-header nav { gap: 18px; flex-wrap: wrap; justify-content: center; }
+  main.page { padding: 60px 0 70px; }
+  .stylist-profile { text-align: center; }
+  .stylist-profile .actions { justify-content: center; }
+}
