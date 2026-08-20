@@ -167,7 +167,8 @@ write("faq/index.html", page(
 # ---------- Team ----------
 team_cards = []
 for s in data["stylists"]:
-    team_cards.append(f"""<a class="card" href="../{s['slug']}/">
+    card_href = esc(s["external_url"]) if s.get("external_url") else f"../{s['slug']}/"
+    team_cards.append(f"""<a class="card" href="{card_href}">
       <img src="../assets/img/{s['photo']}" alt="{esc(s['name'])}">
       <div class="name">{esc(s['name'])}</div>
       <div class="role">{esc(s['role'])}</div>
@@ -250,11 +251,10 @@ ext = data["hair_extensions"]
 ext_sections = "".join(
     f"<h2>{esc(title)}</h2>{nl2p(body)}" for title, body in ext["sections"]
 )
-ext_body = f"""{title_band("Extensions FAQ")}
-  <main class="page">
+ext_body = f"""<main class="page">
+    <img class="content-banner" src="../assets/img/{ext['photo']}" alt="Hair extensions at Free Hair Salon">
     <div class="wrap">
       <div class="content-page">
-        <img src="../assets/img/{ext['photo']}" alt="Hair extensions at Free Hair Salon">
         {ext_sections}
         <div class="cta"><a class="btn" href="{esc(data['general_book_url'])}">Book Now</a></div>
       </div>

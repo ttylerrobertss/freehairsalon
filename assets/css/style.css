@@ -235,6 +235,17 @@ main.page {
 /* Long-form content page (extensions / hair systems) */
 .content-page { max-width: 720px; margin: 0 auto; }
 .content-page img { border-radius: 4px; margin-bottom: 50px; }
+.content-banner {
+  display: block;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  margin-top: -70px;
+  margin-bottom: 60px;
+  aspect-ratio: 3 / 1;
+  object-fit: cover;
+}
 .content-page h2 { font-size: 1.4rem; font-weight: 700; margin: 44px 0 14px; }
 .content-page p { font-size: 1.08rem; line-height: 1.7; white-space: pre-line; }
 .content-page .cta { text-align: center; margin-top: 50px; }
