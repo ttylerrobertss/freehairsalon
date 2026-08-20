@@ -124,7 +124,9 @@ img { max-width: 100%; display: block; }
 }
 .headline-section h1 {
   font-size: clamp(2rem, 5vw, 3.4rem);
-  font-weight: 500;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
   margin: 0 0 50px;
 }
 .link-cols {

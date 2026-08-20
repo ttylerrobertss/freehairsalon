@@ -75,7 +75,7 @@ def page(title, description, body, prefix="", active=None, extra_head="", show_h
   <link rel="icon" href="{prefix}assets/img/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{prefix}assets/css/style.css?v={CSS_VERSION}">
   {extra_head}
 </head>
