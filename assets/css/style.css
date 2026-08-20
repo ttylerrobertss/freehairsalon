@@ -124,7 +124,7 @@ img { max-width: 100%; display: block; }
 }
 .headline-section h1 {
   font-size: clamp(2rem, 5vw, 3.4rem);
-  font-weight: 700;
+  font-weight: 500;
   margin: 0 0 50px;
 }
 .link-cols {
@@ -237,14 +237,14 @@ main.page {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-between;
+  gap: 30px;
   margin-bottom: 40px;
 }
 .site-footer .foot-marks img { display: block; }
-.site-footer .mark-monogram { height: 64px; }
-.site-footer .mark-squiggle { height: 40px; }
-.site-footer .mark-badge { height: 84px; }
+.site-footer .mark-monogram { height: 90px; }
+.site-footer .mark-squiggle { height: 60px; }
+.site-footer .mark-badge { height: 110px; }
 .site-footer .foot-grid {
   display: flex;
   flex-wrap: wrap;

@@ -50,7 +50,7 @@ def header(prefix, active=None, overlay=False):
 
 def footer(prefix):
     return f"""<footer class="site-footer">
-    <div class="foot-marks">
+    <div class="foot-marks wrap">
       <img class="mark-monogram" src="{prefix}assets/img/monogram.png" alt="{SITE_NAME} monogram">
       <img class="mark-squiggle" src="{prefix}assets/img/squiggle.png" alt="Free Hair">
       <img class="mark-badge" src="{prefix}assets/img/badge.png" alt="Free Hair Take Care badge">
