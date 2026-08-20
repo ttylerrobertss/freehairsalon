@@ -98,12 +98,24 @@ img { max-width: 100%; display: block; }
   white-space: nowrap;
   padding: 10px 0;
 }
+.ticker-track {
+  display: inline-flex;
+  animation: ticker-scroll 30s linear infinite;
+}
 .ticker span {
   display: inline-block;
   font-size: 0.85rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   padding-right: 1em;
+  white-space: nowrap;
+}
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track { animation: none; }
 }
 
 /* Good hair days section */
@@ -219,10 +231,22 @@ main.page {
 /* Footer */
 .site-footer {
   background: var(--lime);
-  padding: 50px 32px 40px;
+  padding: 60px 32px 40px;
   text-align: center;
   font-size: 0.85rem;
 }
+.site-footer .foot-marks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+.site-footer .foot-marks img { display: block; }
+.site-footer .mark-monogram { height: 64px; }
+.site-footer .mark-squiggle { height: 40px; }
+.site-footer .mark-badge { height: 84px; }
 .site-footer .foot-grid {
   display: flex;
   flex-wrap: wrap;
@@ -230,7 +254,6 @@ main.page {
   gap: 50px;
   margin-bottom: 24px;
 }
-.site-footer .foot-mark img { height: 46px; filter: brightness(0); }
 .site-footer a { text-decoration: underline; text-underline-offset: 3px; }
 .site-footer .copy { color: #4d4a2f; }
 

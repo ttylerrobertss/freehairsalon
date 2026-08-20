@@ -47,8 +47,12 @@ def header(prefix, active=None, overlay=False):
 
 def footer(prefix):
     return f"""<footer class="site-footer">
+    <div class="foot-marks">
+      <img class="mark-monogram" src="{prefix}assets/img/monogram.png" alt="{SITE_NAME} monogram">
+      <img class="mark-squiggle" src="{prefix}assets/img/squiggle.png" alt="Free Hair">
+      <img class="mark-badge" src="{prefix}assets/img/badge.png" alt="Free Hair Take Care badge">
+    </div>
     <div class="foot-grid">
-      <div class="foot-mark"><img src="{prefix}assets/img/wordmark.png" alt="{SITE_NAME}"></div>
       <div>{esc(data['address_line1'])}<br>{esc(data['address_line2'])}</div>
       <div><a href="{esc(data['instagram_salon'])}">Instagram</a></div>
     </div>
@@ -89,7 +93,8 @@ def write(relpath, content):
         f.write(content)
 
 
-TICKER_TEXT = " &mdash; ".join(["FREE HAIR", "TAKE CARE"] * 10)
+TICKER_ITEM = " &mdash; ".join(["FREE HAIR", "TAKE CARE"] * 10)
+TICKER_TRACK = f'<span>{TICKER_ITEM}</span>' * 2
 
 # ---------- Home ----------
 home_body = f"""<div class="hero">
@@ -103,7 +108,7 @@ home_body = f"""<div class="hero">
       </div>
     </div>
   </div>
-  <div class="ticker"><span>{TICKER_TEXT}</span></div>
+  <div class="ticker"><div class="ticker-track">{TICKER_TRACK}</div></div>
   <section class="headline-section">
     <h1>{esc(data['hero']['headline'])}</h1>
     <div class="link-cols">
