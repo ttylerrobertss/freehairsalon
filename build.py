@@ -104,6 +104,9 @@ TICKER_TRACK = f'<span>{TICKER_ITEM}</span>' * 2
 
 # ---------- Home ----------
 home_body = f"""<div class="hero">
+    <div class="hero-video-wrap">
+      <iframe src="https://www.youtube-nocookie.com/embed/{data['hero']['video_id']}?autoplay=1&mute=1&loop=1&playlist={data['hero']['video_id']}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3&disablekb=1" title="Free Hair Salon background video" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+    </div>
     <img class="hero-photo" src="assets/img/{data['hero']['photo']}" alt="Free Hair Salon stylists">
     <div class="hero-overlay">
       <img class="hero-wordmark" src="assets/img/wordmark.png" alt="Free Hair">
