@@ -189,19 +189,22 @@ write("team/index.html", page(
 for s in data["stylists"]:
     actions = []
     if s.get("external_url"):
-        actions.append(f'<a class="btn" href="{esc(s["external_url"])}">Full Website</a>')
-    if s.get("book_url"):
-        actions.append(f'<a class="btn" href="{esc(s["book_url"])}">Book Now</a>')
-    if s.get("price_list_slug"):
-        actions.append(f'<a class="btn" href="../{s["price_list_slug"]}/">Price List</a>')
-    if s.get("hair_system_faq_link"):
-        actions.append('<a class="btn" href="../hair-systems/">Hair System FAQ</a>')
-    if s.get("text_phone"):
-        actions.append(f'<a class="btn" href="tel:{s["text_phone"]}">Text</a>')
-    if s.get("email"):
-        actions.append(f'<a class="btn" href="mailto:{s["email"]}">Email</a>')
-    if s.get("instagram"):
-        actions.append(f'<a class="btn" href="{esc(s["instagram"])}">Instagram</a>')
+        if s.get("book_url"):
+            actions.append(f'<a class="btn" href="{esc(s["book_url"])}">Book Now</a>')
+        actions.append(f'<a class="btn" href="{esc(s["external_url"])}">Details</a>')
+    else:
+        if s.get("book_url"):
+            actions.append(f'<a class="btn" href="{esc(s["book_url"])}">Book Now</a>')
+        if s.get("price_list_slug"):
+            actions.append(f'<a class="btn" href="../{s["price_list_slug"]}/">Price List</a>')
+        if s.get("hair_system_faq_link"):
+            actions.append('<a class="btn" href="../hair-systems/">Hair System FAQ</a>')
+        if s.get("text_phone"):
+            actions.append(f'<a class="btn" href="tel:{s["text_phone"]}">Text</a>')
+        if s.get("email"):
+            actions.append(f'<a class="btn" href="mailto:{s["email"]}">Email</a>')
+        if s.get("instagram"):
+            actions.append(f'<a class="btn" href="{esc(s["instagram"])}">Instagram</a>')
 
     extra = ""
     if s.get("tagline"):
