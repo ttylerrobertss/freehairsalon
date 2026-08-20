@@ -188,6 +188,8 @@ write("team/index.html", page(
 # ---------- Individual stylist pages ----------
 for s in data["stylists"]:
     actions = []
+    if s.get("external_url"):
+        actions.append(f'<a class="btn" href="{esc(s["external_url"])}">Full Website</a>')
     if s.get("book_url"):
         actions.append(f'<a class="btn" href="{esc(s["book_url"])}">Book Now</a>')
     if s.get("price_list_slug"):
