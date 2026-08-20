@@ -1,9 +1,12 @@
-import json, os, html
+import json, os, html, hashlib
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
 with open(os.path.join(ROOT, "data.json")) as f:
     data = json.load(f)
+
+with open(os.path.join(ROOT, "assets/css/style.css"), "rb") as f:
+    CSS_VERSION = hashlib.sha1(f.read()).hexdigest()[:10]
 
 SITE_NAME = "Free Hair Salon"
 DOMAIN = "https://freehairsalon.com"
@@ -70,7 +73,10 @@ def page(title, description, body, prefix="", active=None, extra_head="", show_h
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(description)}">
   <link rel="icon" href="{prefix}assets/img/favicon.png">
-  <link rel="stylesheet" href="{prefix}assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{prefix}assets/css/style.css?v={CSS_VERSION}">
   {extra_head}
 </head>
 <body>
@@ -298,6 +304,20 @@ write("merch/index.html", page(
     f"Merch — {SITE_NAME}",
     "Free Hair Salon merch: tie dye tees and tote bags.",
     merch_body, prefix="../", active="merch",
+))
+
+# ---------- 404 ----------
+notfound_body = """<main class="page">
+    <div class="wrap" style="text-align:center; padding: 40px 0;">
+      <h1 style="font-size: 2rem;">Page not found</h1>
+      <p style="margin-top: 14px;"><a class="btn" href="/">Back home</a></p>
+    </div>
+  </main>"""
+write("404.html", page(
+    f"Page not found — {SITE_NAME}",
+    "Page not found.",
+    notfound_body,
+    prefix="/",
 ))
 
 # ---------- Sitemap ----------
